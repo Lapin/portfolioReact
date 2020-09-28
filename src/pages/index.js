@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
+
+import DefaultLayout from '../components/default'
 
 export default () => {
   return (
-    <>
-      Hello world!
-      <p><Link to="/blog">View Blog</Link></p>
-    </>)
+    <DefaultLayout>
+      <h1 className='wrapper'>let there be icerik</h1>
+
+    </DefaultLayout>)
 }

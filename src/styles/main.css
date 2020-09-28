@@ -1,0 +1,50 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+    @import url('https://rsms.me/inter/inter.css');
+
+    body {
+        @apply font-Inter tracking-tight antialiased text-darkish text-lg;
+    }
+
+    h1 {
+        @apply text-lg font-semibold leading-tight;
+    }
+
+    h2 {
+        @apply text-lg leading-tight;
+    }
+}
+
+@layer components {
+
+    .debug {
+        @apply bg-pink-200;
+    }
+    .debug2 {
+        @apply bg-pink-500;
+    }
+    .debug3 {
+        @apply bg-pink-700;
+    }
+    .wrapper {
+        @apply max-w-screen-lg mx-auto px-6;
+    }
+    .sectionPad {
+        @apply my-32;
+    }
+    .smHeader {
+        @apply text-xl font-semibold;
+    }
+
+    .card {
+        @apply border border-gray-300 shadow-none rounded-lg transition-all ease-in-out duration-500 overflow-hidden;
+    }
+    .card:hover {
+        @apply shadow-xl;
+    }
+}
